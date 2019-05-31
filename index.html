@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apple-T</title>
+
+  <!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap css-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!--jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <!--FontAwesomeIcons-->
+  <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!--animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+ <!--Google Fonts-->
+ <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+
+<style>
+  body{
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+  }
+
+.navbar-toggle{
+  border:1px solid yellow;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.nav{
+  padding-left: 30%;
+}
+.navbar{
+  background-color: transparent;
+  padding-top: 5px;
+  border:none;
+
+}
+.navbar-brand{
+   font-size: 30px;
+   font-family:Baloo;
+   margin-left: 20px;
+}
+
+.fa-apple{
+  padding-right: 10px;
+  margin-left: 10px;
+}
+.navcontent{
+  font-family: Athiti;
+  font-size: 18px;
+  background-color: #000;
+  opacity: .8;
+
+
+}
+.navcontent:hover{
+  background-color: #00BFFF;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;    
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 14px 20px;
+  padding-bottom: 10.5px;
+  background-color: #000;
+  opacity: .8;
+  font-family: Athiti;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #000;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background-color: #00BFFF;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  float: none;
+}
+.dropdown-content {
+  position: relative;
+}
+.dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  .slidersec{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("home.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  
+}
+.carousel-inner{
+  margin-top: 180px;
+  height: 600px;
+}
+
+.item{
+  text-align: center;
+}
+.slidehead{
+  font-size: 40px;
+  font-family:Asul;
+  text-align: center;
+  word-spacing: 3px;
+
+
+}
+.slidesen{
+  font-size: 22px;
+  font-family: Athiti;
+  word-spacing: 3px;
+  opacity: .7;
+  padding-top: 5px;
+}
+.slidepara{
+  font-size: 22px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  padding-top: 30px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.slideback{
+  background-color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: .6;
+}
+
+.slideback1{
+  background-color: purple;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: .7;
+}
+
+.slideback2{
+  background-color: #8b0000;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: .7;
+}
+
+
+.slidebtn{
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border:1px solid #fff;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: Athiti;
+  text-transform: uppercase;
+  background-color: transparent;
+
+}
+
+.slidebtn:hover{
+  color: #fff;
+  background-color:#00008b;
+  opacity: .6; 
+  border-radius: 20px;
+
+}
+.fa-spinner{
+  margin-right: 10px;
+}
+.fa-file-text-o{
+  padding-right: 10px;
+  color: #000;
+}
+.fa-mobile{
+  padding-right: 10px;
+  color: #000;
+  font-size: 22px;
+}
+
+.fa-laptop{
+  padding-right: 8px;
+  color: #000;
+  font-size: 16px;
+}
+.fa-cart-arrow-down{
+  padding-right: 10px;
+  color: #000;
+  font-size: 18px;
+}
+.fa-sign-in{
+  padding-right: 10px;
+  color: #000;
+
+}
+.fa-user-plus{
+  padding-right: 10px;
+  color: #000;
+}
+.img{
+  margin-top: 150px;
+  transition: all 1.5s ease;
+}
+.img:hover{
+  transform: scale(.7);
+}
+/* about section */
+
+.aboutsec{
+  background-color: #ddd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.abouthead{
+  font-size: 40px;
+  font-family: Baloo;
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.aboutpara{
+  font-size: 22px;
+  color: #000;
+  line-height: 30px;
+  word-spacing: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.aboutpara1{
+  font-family: Athiti;
+  font-size: 20px;
+  color: #000;
+  padding-top: 40px;
+  line-height: 27px;
+
+}
+.aboutbtn{
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border:1px solid #fff;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Athiti;
+  text-transform: uppercase;
+  background-color: #000;
+
+
+}
+
+.aboutbtn:hover{
+  color: #fff;
+  background-color:purple; 
+
+}
+.aboutimg{
+  padding-top: 50px;
+  transition: all 1.5s ease;
+}
+.aboutimg:hover{
+  transform: scale(1.3);
+}
+.h{
+  font-family: Actor;
+  font-size: 40px;
+  color: blue;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.featuressec{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("tech.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.featureshead{
+  font-size: 40px;
+  font-family: Baloo;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.featurespara{
+  font-size: 22px;
+  color: #fff;
+  line-height: 30px;
+  word-spacing: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.card{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 40px;
+  max-height: 500px;
+}
+.cardtitle{
+  font-family: Actor;
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.cardpara{
+  font-family: Athiti;
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.cardbtn{
+  color: #fff;
+  background-color: transparent;
+  border:1px solid #fff;
+  padding:10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: all 1.5s ease;
+}
+.cardbtn:hover{
+  transform: scale(1.2);
+}
+.cardimg{
+  border-radius: 50%;
+  transition: all 1.5s ease;
+}
+
+.card:hover img{
+  transform: scale(1.4);
+}
+.fa-star-o{
+  color: #fff;
+  padding-right: 10px;
+}
+
+
+.utsec{
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.uthead{
+  font-size: 30px;
+  color: #000;
+  font-family: Baloo;
+  word-spacing: 2px;
+  padding-top: 10px;
+
+}
+.utpara{
+  font-family: Athiti;
+  font-size: 20px;
+  word-spacing: 2px;
+  padding-top: 30px;
+  color: #000;
+}
+.utbtn{
+  color: #000;
+  background-color: #fff;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #00008b;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Baloo;
+  word-spacing: 3px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+}
+.utbtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.fa-chevron-right{
+  padding-right: 10px;
+  color: #000;
+  font-size: 12px;
+}
+.ut1{
+  margin-top: 10px;
+}
+.utpara1{
+  font-family: Athiti;
+  font-size: 20px;
+  word-spacing: 2px;
+  padding-top: 5px;
+  color: #000;
+
+}
+
+.line{
+  height: 2px;
+  background-color: #00008b;
+}
+
+.ut1{
+  transition: all 1.5s ease;
+}
+.ut1:hover{
+  transform: scale(.5);
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #008fff;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #000;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #000;
+  background-color: #fff;
+  display: none;
+  padding-bottom:  50px;
+  height: 100%;
+}
+.tabhead{
+  font-size: 24px;
+  font-family: Baloo;
+  text-align: center;
+  padding-top: 50px;
+}
+.tabpara{
+  font-size: 22px;
+  font-family: Actor;
+  color: #000;
+  text-align: center;
+}
+
+.tabpara1{
+  font-size: 18px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  line-height: 25px;
+  color: #000;
+}
+.tabpara2{
+  font-size: 18px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  line-height: 25px;
+  color: #000;
+}
+
+#Home {
+  background-color: #fff;
+}
+#News {
+  background-color: #fff;
+}
+#Contact {
+  background-color: #fff;
+}
+#About {
+  background-color: #fff;
+}
+
+.tab{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.tabimg1{
+  transition: all 1.5s ease;
+}
+
+.tabimg1:hover{
+  transform: scale(.6);
+}
+.fa-windows{
+  color: #fff;
+  font-size: 25px;
+}
+
+
+.fa-creative-commons{
+  color: #fff;
+  font-size: 25px;
+}
+
+.fa-rocket{
+  color: #fff;
+  font-size: 25px;
+
+}
+
+.fa-android{
+  color: #fff;
+  font-size: 25px;
+}
+.servicessec {
+  background: darkred;
+  -webkit-animation: mymove 8s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 8s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% {background-color: purple;}
+}
+
+@keyframes mymove {
+  50% {background-color: purple;}
+}
+
+.serviceshead{
+  font-size: 35px;
+  color: #fff;
+  font-family: Baloo;
+  word-spacing: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+ 
+}
+.servicespara{
+  font-size: 22px;
+  color: #fff;
+  word-spacing: 2px;
+  padding-top: 10px;
+}
+
+.devsec{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  
+}
+.devhead{
+  font-size: 40px;
+  font-family: Baloo;
+  color: #fff;
+  text-align: center;
+
+}
+.mobhead{
+  font-size: 40px;
+  font-family: Baloo;
+  color: #000;
+  text-align: center;
+
+}
+.devpara{
+  color: #fff;
+  font-size: 24px;
+  font-family: Athiti;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.mobpara{
+  color: #000;
+  font-size: 24px;
+  font-family: Athiti;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.devcon{
+  background-color: #fff;
+  margin-top: 30px;
+  color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+}
+
+
+.devconpara{
+  text-align: center;
+  font-size: 22px;
+  color: #000;
+  line-height: 25px;
+  font-family: Athiti;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.w{
+  color: blue;
+  font-size: 40px;
+  padding-left: 5px;
+  font-family: Actor;
+
+}
+.we{
+  padding-bottom: 10px;
+  font-size: 35px;
+  color: #00008b;
+  text-align: left;
+  font-family: Actor;
+}
+
+.devconhead{
+  font-size: 20px;
+  color: #008bff;
+  line-height: 50px;
+  text-align: left;
+  margin-left: 20px;
+
+  
+
+}
+
+.devconimg{
+  transition: all 1.5s ease;
+  margin-top: 20px;
+}
+.devconimg:hover{
+  transform: scale(.6);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.parallax2{
+  /* The image used */
+  background-image: url("parallax3.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.number{
+  font-size: 15px;
+  color: #fff;
+  background-color: #00008b;
+  border-radius: 50%;
+  padding:15px;
+  margin-right:50px;
+  
+}
+
+.teamsec{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("parallax2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 325px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.cardtitle {
+  color: #fff;
+  font-size: 18px;
+}
+
+.teambtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ak{
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  padding:5px;
+}
+
+.teambtn:hover{
+  background-color: #00008b;
+  color: #fff;
+  } 
+  .ak:hover {
+  color: #008bff;
+}
+.teamhead{
+  color: #fff;
+  font-family: Baloo;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  word-spacing: 2px;
+}
+.teamtitle,.teamdes{
+  color: #fff;
+}
+.teamname{
+  color: #fff;
+  font-family: Baloo;
+  font-size: 30px;
+}
+.ourtitle{
+  color: #000;
+  font-family: Baloo;
+  font-size: 40px;
+  word-spacing: 2px;
+  padding-bottom: 50px;
+  padding-top: 5px;
+  text-align: center;
+
+}
+
+
+.contactsec{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("contact.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  
+}
+.cont{
+  text-align: center;
+  font-family: Athiti;padding-bottom: 20px;
+  
+}
+
+.con{
+  font-size: 30px;
+
+}
+.con1{
+  font-size: 20px;
+}
+.contitle{
+  font-family: Athiti;
+  font-size: 30px;
+
+}
+.sen{
+  font-family: Athiti;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.frm {
+  border-radius: 5px;
+  background-color: #d5d5d5;
+  padding: 20px;
+  margin-top: 50px;
+}
+.theend{
+background-color: #000;
+opacity: .9;
+  color: #fff !important;
+}
+
+
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+<!--navigation menu-->
+
+<section id="navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span></button>
+
+
+      <a class="navbar-brand" href="#" style="color: #fff;"><i class="fa fa-apple" aria-hidden="true"></i>Apple-T</a>
+    </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav">
+            <li class="navcontent"><a href="#slider" style="color: #fff;">Home</a></li>
+            <li class="navcontent"><a href="#about" style="color: #fff;">About Us</a></li>
+
+            <li class="dropdown">
+
+            <button class="dropbtn">Services 
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
+
+           <div class="dropdown-content">
+            <a href="#dev"><i class="fa fa-file-text-o" aria-hidden="true"></i>Website Development</a>
+            <a href="#dev"><i class="fa fa-file-text-o" aria-hidden="true"></i>Website Designing</a>
+            <a href="#mob"><i class="fa fa-mobile" aria-hidden="true"></i>Mobile Application</a>
+            <a href="#soft"><i class="fa fa-laptop" aria-hidden="true"></i>Software Development</a>
+            <a href="#mark"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Online Marketing</a>
+          
+          </div>
+
+          </li>
+
+            
+            <li class="navcontent"><a href="#" style="color: #fff;">Portfolio</a></li>
+
+            <li class="dropdown">
+
+            <button class="dropbtn">Career 
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
+
+           <div class="dropdown-content">
+            <a href="register.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a>
+            <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Log In</a>
+            <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Employee</a>
+            
+          </div>
+
+          </li>
+
+
+            <li class="navcontent"><a href="#contact" style="color: #fff;">Contact Us</a></li>      
+    
+  </ul> 
+   </div>   
+  </div>
+</nav>
+</section>
+<!--navigation menu end-->
+
+
+
+
+
+<!--Slider Section-->
+
+<section id="slider">
+
+  <div class="slidersec container-fluid">
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+          <div class="slideback">
+
+          <h1 class="slidehead">The Best Quality Services & Solutions.</h1>
+          <h3 class="slidesen">What Makes Your Website Valuable?</h3>
+       
+        </div>
+        
+          <p class="slidepara">A website today is like carrying a business card at every business meeting.</p>
+         
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+       </div>
+
+
+
+      <div class="item">
+        <div class="slideback1">
+          <h1 class="slidehead">The Best Quality Services & Solutions.</h1>
+          <h3 class="slidesen">What Makes Your Website Valuable?</h3>
+        </div>
+        
+            <p class="slidepara">Looking for inexpensive but the best SEO services? Look no further. It's right here at Apple-T technology.</p>
+        
+            <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>        
+      </div>
+    
+      <div class="item">
+        <div class="slideback2">
+        <h1 class="slidehead">The Best Quality Services & Solutions.</h1>
+          <h3 class="slidesen">What Makes Your Website Valuable?</h3>
+        </div>
+        
+            <p class="slidepara">Our product management team will work with you from the application to deploy it in your chosen application store.</p>
+          
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+      </div>
+
+      
+    </div>
+
+    <!-- Left and right controls -->
+
+     </div>
+   </div>
+
+
+   <div class="img col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    
+    <img src="home1.png" width="100%" height="400px;"> 
+   </div>
+
+
+</div>
+</section>
+
+
+<!---About Section-->
+<section id="about">
+  <div class="aboutsec container-fluid">
+   <div class="row">
+
+      <div class="col-12 text-center">
+        <h1 class="abouthead">About Our Company</h1>
+        <h3 class="aboutpara">We help you achieve these qualities in your IT strategy by providing you the best quality services and solutions.</h3>
+      </div>
+      <div class="container">
+      <div class="col-md-6 col-lg-6">
+        <h4 class="aboutpara1"><b class="h">H</b>ello! we are <b>Apple-T</b>. a website development agency that believes in the power of creative ideas, great design and better solution . Apple-T is a digital media and web designing company of young, dynamic & enthusiastic minds started in the year 2012 and is situated in one of the best locations in Pune and Akola which will assist you produce the website and promote your brand. We perceive your desires and thus our foremost priority is client satisfaction, operating as a collective group of trained and qualified designers, we assist your business, right from making wonderful websites, to hosting & maintaining and marketing them for you. A captive website that's competitively par along with your content updations. Thus, Apple-T can give you affordable and best quality digital marketing services meeting your ever-growing business desires and needs.</h4>
+
+
+        <button class="aboutbtn">READ MORE</button>
+      </div>
+
+      <div class="aboutimg col-md-6 col-lg-6">
+        <img src="about.png" width="100%;">
+        
+      </div>
+    </div>
+
+    </div>
+  </div>
+  
+</section>
+
+<!--features Section-->
+<section id="features">
+  <div class="featuressec container-fluid">
+    <div class="row">
+
+      <div class="col-12 text-center">
+        <h1 class="featureshead">Know Our Amazing Features</h1>
+        <p class="featurespara">We help you achieve these qualities in your IT strategy by providing you the best quality services and solutions.</p>
+        
+      </div>
+
+      <div class="container text-center">
+
+        <div class="card col-md-3 col-lg-3">
+      <img src="card1.png" alt="John" class="cardimg" style="width:125;height: 125px;">
+      <h3 class="cardtitle">Website Designing</h3>
+        <p class="cardpara">Websites have become a need of the day. A website today is like carrying a business card at every business meeting.</p>
+      <button class="cardbtn"><i class="fa fa-star-o" aria-hidden="true"></i>Read More</button>
+      </div>
+
+      <div class="card col-md-3 col-lg-3">
+      <img src="card2.png" alt="John" class="cardimg" style="width:125;height: 125px;">
+      <h3 class="cardtitle">Digital Marketing</h3>
+        <p class="cardpara">Looking for inexpensive but the best SEO services? Look no further. It's right here at Apple-T technology.</p>
+      <button class="cardbtn"><i class="fa fa-star-o" aria-hidden="true"></i>Read More</button>
+      </div>
+
+      <div class="card col-md-3 col-lg-3">
+      <img src="card3.png" alt="John" class="cardimg" style="width:125;height: 125px;">
+      <h3 class="cardtitle">Android Application</h3>
+        <p class="cardpara">Our product management team will work with you from the application to deploy it in your chosen application store</p>
+      <button class="cardbtn"><i class="fa fa-star-o" aria-hidden="true"></i>Read More</button>
+      </div>
+
+      <div class="card col-md-3 col-lg-3">
+      <img src="card4.png" alt="John" class="cardimg" style="width:125;height: 125px;">
+      <h3 class="cardtitle">Software Development</h3>
+        <p class="cardpara">Software development encompasses many different skills and disciplines in the production and maintenance</p>
+      <button class="cardbtn"><i class="fa fa-star-o" aria-hidden="true"></i>Read More</button>
+      </div>
+
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+
+
+<!--mission and vision Section-->
+<!--Ut section-->
+<section id="ut">
+  <div class="utsec container">
+    <div class="row">
+      
+      <div class="col-md-6 col-lg-6">
+        <img src="mission.jpg" class="ut1" style="height: 500px;width: 100%;"><br><br>
+        <hr class="line">
+      </div>
+      
+      <div class="col-md-6 col-lg-6">
+        <h1 class="uthead">Our Mission</h1>
+        <p class="utpara">Our Roadmap starts with our mission, which is enduring. It declares our purpose as a company and serves as the standard against which we weigh our a ctions and decisions.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>To provide customized business solutions to clients in IT/Non IT indu stry based on emerging technologies.</p>
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>To maintain long term mutually beneficial relationship with our clients.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>To deliver excellent services and solutions with the best in industry practices.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i> To inspire moments of optimism and happiness.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>To create value and make a difference.</p>
+
+        <button class="utbtn">Learn More</button>
+        
+      </div>
+
+
+    </div>
+    
+  </div>
+  
+</section>
+
+<!--Ut section-->
+<section id="ut">
+  <div class="utsec container">
+    <div class="row">
+      
+      
+      <div class="col-md-6 col-lg-6">
+        <h1 class="uthead">Our Vission</h1>
+        <p class="utpara">Our vision serves as the framework for our Roadmap and guides every aspect of our business by describing what we need to accomplish in order to continue achieving sustainable, quality growth.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>People : Be a great place to work where people are inspired to be the best they can be.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>Portfolio : Bring to the world a portfolio of quality work that anticipate and satisfy people's desires and needs.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>Planet : Be a responsible citizen that makes a difference by helping build and support sustainable communities.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>Profit : Maximize long-term return to shareowners while being mindful of our overall responsibilities.</p>
+
+        <p class="utpara1"><i class="fa fa-chevron-right" aria-hidden="true"></i>Productivity : Be a highly effective, lean and fast-moving organization.</p>
+
+        <button class="utbtn">Learn More</button>
+        
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <img src="vision.png" class="ut1" style="height: 500px;width: 100%;">
+        <hr class="line">
+      </div>
+
+    </div>
+    
+  </div>
+  
+</section>
+
+<!--services Section-->
+
+<section id="services">
+
+  <div class="servicessec container-fluid">
+    <div class="row">
+
+        <div class="col-12 text-center">
+          <h2 class="serviceshead">Technology That Brings Teams Together</h2>
+          <p class="servicespara">—Intelligent apps that help you do your best work.</p>          
+        </div>
+
+        <div class="tab container">
+
+          <button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen"><i class="fa fa-windows" aria-hidden="true"></i></button>
+
+          <button class="tablink" onclick="openPage('News', this, 'red')">
+          <i class="fa fa-creative-commons" aria-hidden="true"></i></button>
+
+          <button class="tablink" onclick="openPage('Contact', this, 'purple')"><i class="fa fa-rocket" aria-hidden="true"></i></button>
+          <button class="tablink" onclick="openPage('About', this, 'darkred')"><i class="fa fa-android" aria-hidden="true"></i></button>
+
+              <div id="Home" class="tabcontent">
+
+
+                <h3 class="tabhead text-center">Website Designing</h3>
+
+                <div class="col-lg-6 col-md-6">
+
+                <p class="tabpara animated fadeInUp yourElement">What Makes Your Website Valuable?</p>
+
+                <p class="tabpara1 animated fadeInUp yourElement">Don't just get your website designed. Customers come to your website looking for something of value. It can be a utility such as an online calculator of returns or an information that can add value to their lives.</p>
+                <p class="tabpara2 animated fadeInUp yourElement">You should be able to give them the list of services clearly without cluttering the page with too much of data. You might be a business with lots of resources for a specific target audience. A search function on your web page can help your target audience to find the relevant data they are looking for.</p>
+
+              </div>
+
+              <div class="col-md-6 col-lg-6">
+                <img src="tab1.png" class="tabimg1" width="100%"; height="250px";>
+              </div>
+
+
+              </div>
+
+              <div id="News" class="tabcontent">
+
+
+                  <h3 class="tabhead text-center">E-Commerce Solution</h3>
+                <div class="col-md-6 col-lg-6">
+                <img src="tab2.png" class="tabimg1" width="100%"; height="250px";>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+
+                <p class="tabpara animated fadeInUp yourElement">We Promise To Maintain And Market Your Online Store!</p>
+
+                <p class="tabpara1 animated fadeInUp yourElement">Our e-Commerce Web Solutions grant you with vibrant functionality, effortless and stable transactions with safe and sound shopping experience to your precious consumers. We being an e-Commerce Website Development Company, have developed the platform that incorporates database determined shopping cart method with infinite goods catalogue that can be controlled through admin panel without any web skills and knowledge. Innumerable e-commerce sites and applications are developed on a daily basis to fulfill diverse needs of business, but in order to carry on in such a high competitive atmosphere; one should come up with an impulsive and immense e-commerce website</p>
+                
+              </div>
+
+
+              </div>
+
+              <div id="Contact" class="tabcontent">
+
+
+
+                <h3 class="tabhead text-center">Mobile Application</h3>
+
+                <div class="col-lg-6 col-md-6">
+
+                <p class="tabpara animated fadeInUp yourElement">When Your Mobile Meet The Correct Application, Wonder Happens!</p>
+
+                <p class="tabpara1 animated fadeInUp yourElement">App developers is imaginative and well-informed to achieve your individual requirements along with your business desires. With highly developed equipment and knowledge, our mobile apps developers are gifted to produce highly personalized mobile apps for user’s wants and enterprises. Our understanding and past efforts are the platforms of our brilliance in mobile applications development.</p>
+              </div>
+
+              <div class="col-md-6 col-lg-6">
+                <img src="tab3.png" class="tabimg1" width="100%"; height="250px";>
+              </div>
+
+
+
+
+
+              </div>
+
+              <div id="About" class="tabcontent">
+
+
+
+                <h3 class="tabhead text-center">SEO</h3>
+                <div class="col-md-6 col-lg-6">
+                <img src="tab4.png" class="tabimg1" width="100%"; height="250px";>
+              </div>
+
+              <div class="col-lg-6 col-md-6">
+
+                <p class="tabpara animated fadeInUp yourElement">Reasons To Consider SEO Services:</p>
+
+                <p class="tabpara1 animated fadeInUp yourElement">SEO will assist in increasing the organic traffic. SEO will provide your website the important presence in the virtual world. The search engines incline more towards the organic ads above the paid ones. SEO will assist in increasing the ranking of the page of your website. SEO is comparatively less expensive than the paid ads. By the use of the manual SEO Services, you will be able to divert more organic traffic to your website. SEO will increase the rates of conversion to the website which will result in more profit.</p>
+                
+              </div>
+
+
+              </div>
+
+                        
+            </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+
+<!--Website Design & Development Section-->
+
+<section id="dev">
+  <div class="parallax">
+  <div class="devsec container-fluid">
+
+    <div class="row">
+
+      <h1 class="devhead">Website Design & Development</h1>
+      <p class="devpara">A WEBSITE CONTAINS ALL THE INFORMATION ABOUT YOUR BUSINESS AND IS A PERFECT E-SOURCE REPRESENTATION OF YOUR SERVICES.</p>
+
+      <div class="devcon container text-center">
+        <p class="devconpara col-12"><b class="w">W</b>ebsites have become a need of the day. A website today is like carrying a business card at every business meeting. A website contains all the information about your business and is a perfect e-source representation of your services. We at Apple-T create simple, easily navigated websites and complete user friendly sites. We ensure that your website loads faster and launches at a quick rate. Time constraint while designing the website is one of the key factors we keep in mind</p>
+
+        <div class="col-lg-6 col-md-6">
+          <img src="design.png" class="devconimg" width="100%" height="350px">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <h1 class="we">We Provide:</h1>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Profile Website Design</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Business Listing Design</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>E-Commerse Design</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Customize Website Design</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Website Redesign</p>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+</div>
+  </div>
+  
+</section>
+
+
+
+<!--Mobile Application Section-->
+
+<section id="mob">
+  <div class="mobsec container-fluid">
+
+    <div class="row">
+
+      <h1 class="mobhead">Mobile Application</h1>
+      <div class="container text-center">
+      <p class="mobpara">WE PROVIDE EXCELLENT AND EFFICIENT DEVELOPMENT SERVICES WHICH INCLUDE IOS AND ANDROID. WE THRIVE ON METHODOLOGICAL AND TECHNICAL CHALLENGES TO MAKE YOUR IDEAS WORK.</p>
+    </div>
+      <div class="devcon container text-center">
+        <p class="devconpara col-12"><b class="w">W</b>e provide excellent and efficient development services which include IOS and android. We thrive on methodological and technical challenges to make your ideas work. Our skill-full team designs and develops end to end integrated apps for you. At Apple-T we thoroughly understand your requirements and develop the best and long lasting solutions for your business. We thrive on methodological and technical challenges to make your ideas work.</p>
+
+        <div class="col-lg-6 col-md-6">
+          <img src="design2.jpg" class="devconimg" width="100%" height="350px">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <h1 class="we">We Provide:</h1>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Android Application</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>iOS Application</p>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+</div>
+  
+</section>
+
+
+<!--Software Development Section-->
+
+<section id="soft">
+  <div class="parallax2">
+  <div class="devsec container-fluid">
+
+    <div class="row">
+
+      <h1 class="devhead">Software Development</h1>
+      <div class="container">
+      <p class="devpara">SOFTWARE DEVELOPMENT ENCOMPASSES MANY DIFFERENT SKILLS AND DISCIPLINES IN THE PRODUCTION AND MAINTENANCE OF WEBSITES. THE DIFFERENT AREAS OF WEB DESIGN INCLUDE WEB GRAPHIC DESIGN; INTERFACE DESIGN;</p>
+    </div>
+      <div class="devcon container text-center">
+        <p class="devconpara col-12"><b class="w">S</b>oftware development encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.</p>
+
+        <div class="col-lg-6 col-md-6">
+          <img src="design3.jpg" class="devconimg" width="100%" height="350px">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <h1 class="we">We Provide:</h1>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Billing Software</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Web Base Application Development</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Hospital ERP</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>ERP Software</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Customize Software Development</p>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+</div>
+  </div>
+  
+</section>
+
+
+<!--marketing Section-->
+
+<section id="mark">
+  <div class="marksec container-fluid">
+
+    <div class="row">
+
+      <h1 class="mobhead">Online Marketing</h1>
+      <div class="container">
+      <p class="mobpara">LOOKING FOR INEXPENSIVE BUT THE BEST SEO SERVICES? LOOK NO FURTHER. IT'S RIGHT HERE AT APPLE-T TECHNOLOGY. SEO HAS BECOME THE NEED OF EVERY BUSINESS.</p>
+    </div>
+      <div class="devcon container text-center">
+        <p class="devconpara col-12"><b class="w">L</b>ooking for inexpensive but the best SEO services? Look no further. It's right here at Apple-T technology. SEO has become the need of every business. It is very important for every company’s website to be top ranked and occupy the first page of search engines. We improve your websites ranking and focus on brand awareness. Visibility plays a major role in ranking your websites, which in turn generates a large number of visitors and hence create a brand awareness of your product.</p>
+
+        <div class="col-lg-6 col-md-6">
+          <img src="design4.png" class="devconimg" width="100%" height="350px">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <h1 class="we">We Provide:</h1>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>SEO (search Engine Optimiztation)</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>PPC (pay-per-click)</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>SMO (social media optimization)</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Image Building</p>
+          <p class="devconhead"><i class="fa fa-chevron-right" aria-hidden="true"></i>Product Marketing</p>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+</div> 
+</section>
+
+<!--Team Section-->
+<section id="team">
+
+  <div class="teamsec container-fluid">
+    
+    <div class="row">
+      <div class="container">
+        <div>
+          <h2 class="teamhead text-center">Meet Our Team</h2>
+        </div>
+  <div class="card1 col-md-4 col-lg-4">
+  <img src="patil.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Akshay Gotmare</h1>
+  <p class="teamtitle">Web Developer</p>
+  <p class="teamdes">Apple-T</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="card1 col-md-4 col-lg-4">
+  <img src="yogesh.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Yogesh Khedekar</h1>
+  <p class="teamtitle">Worker</p>
+  <p class="teamdes">Apple-T</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="card1 col-md-4 col-lg-4">
+  <img src="pankaj.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Pankaj Amale</h1>
+  <p class="teamtitle">Worker</p>
+  <p class="teamdes">Apple-T</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+    </div>  
+    </div>
+    
+  </div>
+ </div> 
+</section>
+
+
+<!--contact section-->
+<section id="contact">
+  <div class="contactsec container-fluid">
+    <div class="container">
+    <div class="row">
+
+      <div class="cont col-12">
+
+    <h2 class="con">Contact Us</h2>
+    <p class="con1">Swing by for a cup of coffee, or leave us a message:</p>
+  
+    </div>
+
+
+      <div class="address col-lg-6 col-md-6">
+
+      <h2 class="contitle"><b>Contact Info</b></h2>
+  
+        <p class="sen">Akshay Santosh Gotmare</p>
+
+          <p class="sen"><i class="fa fa-phone" aria-hidden="true"></i>
+          +91-9767147832</p>
+
+         <p class="sen"><i class="fa fa-whatsapp" aria-hidden="true"></i> 
+        +91-8459645718</p>
+        
+        <p class="sen"><i class="fa fa-envelope-open" aria-hidden="true"></i>
+         appletech@gmail.com</p>
+
+        <p class="sen"><i class="fa fa-map-marker" aria-hidden="true"></i>
+        Akola,Maharashtra, 444001</p>
+
+        <p class="sen"><i class="fa fa-globe" aria-hidden="true"></i>
+        www.appletech.com</p>
+        
+      </div>
+
+    <div class="form col-lg-6 col-md-6">
+
+        <form action="#" class="frm">
+    <label for="fname" style="color: #000;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname" style="color: #000;">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country" style="color: #000;">Country</label>
+    <select id="country" name="country" style="color: #000;">
+      <option value="australia" style="background-color: #000; color: #fff;">India</option>
+      <option value="australia" style="background-color: #000; color: #fff;">Australia</option>
+      <option value="canada" style="background-color: #000;color: #fff;">Canada</option>
+      <option value="usa" style="background-color: #000;color: #fff;">USA</option>
+    </select>
+
+    <label for="subject" style="color: #000;">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+       </div>
+  
+  </div>   
+    </div>
+  </div>
+
+  <div class="theend container-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <h4 style="font-family:Athiti;">&copy; Apple-T.All Rights Reserved.<br> Created by Apple-T<br> 2019</h4>
+       </div>
+   </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--srollspy-->
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Tabs Section-->
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--Bootstrap End-->
+
+</body>
+</html>
